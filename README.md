@@ -92,6 +92,9 @@ The root component that initializes and renders the **`Sidebar`** and **`Feed`**
 - **`reviews`**: Stores the complete list of fetched reviews.
 - **`filteredReviews`**: Stores the currently filtered set of reviews to display.
 
+### Testing
+There is a TESTPLAN.md file in the frontend folder that can be used to manually test the frontend functionality.
+
 # **Backend Implementation**
 
 ## **Overview**
