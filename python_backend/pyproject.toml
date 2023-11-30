@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python-backend"
+version = "0.1.0"
+description = ""
+authors = ["Austin Chung"]
+readme = "README.md"
+packages = [{include = "python_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+flask-sqlalchemy = "^3.1.1"
+psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.23"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

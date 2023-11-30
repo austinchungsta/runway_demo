@@ -1,0 +1,246 @@
+.body-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+  color: #666;
+  background-color: white;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.sidebar-body {
+  margin-top: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: 0.3s;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 3px 0 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-header {
+  font: 400 0.9rem "Georgia", sans-serif;
+  letter-spacing: -2.5px;
+  color: black;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  height: 80px;
+  line-height: 40px;
+}
+
+.searchbar {
+  padding: 20px;
+  display: flex;
+}
+
+.searchbar>input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0px 0px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+button.search-button {
+  padding: 10px 20px;
+  margin-left: -5px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+button.search-button:hover {
+  background-color: #0056b3;
+}
+
+button.search-button:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+
+/* Table Styling */
+
+.feed {
+  flex-grow: 1;
+  margin-left: 300px;
+  background-color: #f1f1f1;
+
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px 12px 50px;
+}
+
+.td-score-text {
+  text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
+/* STAR REVIEW FIGURE STYLES */
+#star-ratings {
+  width: inherit;
+  font-family: Arial, sans-serif;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  font-size: 15px;
+  margin-right: 15px;
+  color: rgb(23, 155, 255);
+}
+
+.bar {
+  border-radius: 5px;
+  background-color: gray;
+  width: 0%;
+  height: 7px;
+}
+
+#star-ratings {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+/* SLIDER FILTER STYLES */
+.filter {
+  margin-bottom: 30px;
+  font: 700 0.9em "Arial", sans-serif;
+}
+
+.filters {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  width: 100%;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.filters input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ccc;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(23, 155, 255);
+  cursor: pointer;
+}
+
+.filters input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(23, 155, 255);
+  cursor: pointer;
+}
+
+.app-header {
+  font: 500 0.8rem "Georgia", sans-serif;
+  letter-spacing: -1.5px;
+  color: rgb(58, 58, 58);
+  padding-left: 20px;
+}
+
+/* STYLING FOR METADATA SECTION OF SIDEBAR */
+.metadata {
+  padding: 20px;
+  color: rgb(58, 58, 58);
+}
+
+.metadata-item {
+  margin-bottom: 10px;
+}
+
+.metadata-large-font {
+  font: 560 0.8em "Arial", sans-serif;
+  display: inline;
+}
+
+.metadata-small-font {
+  font: 500 0.9em "Arial", sans-serif;
+  display: inline;
+}
+
+.metadata-smaller-font {
+  font: 500 0.7em "Arial", sans-serif;
+  display: inline;
+}
